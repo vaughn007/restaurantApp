@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GrubYum</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+<div id="header">
+    <header  class="header container">
+        <div class="logo">
+            <a href="index.html"><img src="img/grubYum-logo3.png" id="logo"></a>
+            
+        </div>
+        <div class="cart-content">
+
+            <a href="#" class="button"> View Fan Favorite</a>
+            
+            <div class="content hidden">
+                <table id="cart-list">
+                    <thead>
+                        <tr>
+                            <th>Big Deal</th>
+                            <th>Signature Sirloin Steaks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="img/small_steak.jpg">
+                            </td>
+                            <td>&nbsp; Sirloin Steaks</td>
+                            <td class="offer">$7.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="signup.html" class="button">Order Now</a>
+            </div> <!--#cart-->
+        </div><!--.cart-->
+    </header> 
+</div> <!-- end of header -->
+ 
+
+    <div class="website-banner">
+        <div class="website-banner-content container">
+                <h2 class="blinking">We're Open!</h2>
+
+                <p class="Drive-Thru">Drive-Thru • Takeaway • Delivery</p>
+                <form action="#" method="post">
+                    
+                    
+                </form>
+        </div>
+
+    </div> <!--#website-banner-->
+
+
+
+    <div class="bar">
+        <div class="icons container">
+                <div class="icon icon1">
+                    <h3> <i class="fas fa-pizza-slice big-icon"></i> &nbsp;Pick Up</h3>
+                    <p>Order online and pick up your order</p>
+                </div>
+                <div class="icon icon2">
+                    <h3><i class="fas fa-car big-icon"></i> &nbsp; Delivery </h3>
+                    <p>Get your order delivered to your home</p>
+                </div>
+                <div class="icon icon3">
+                    <h3><i class="fas fa-hamburger big-icon"></i> &nbsp; Catering</h3>
+                    <p>We can cater your next event</p>
+                </div>
+        </div>
+    </div>
+
+    <div class="section_title"><h1>Our Offers</h1></div>
+
+    
+
+    
+<div class="menu-list container">
+    
+    
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="InnerContent-sc-1hgdoz4">
+        <h2 data-testid="coupon-redemption-dialog" class="Heading-sc-1k029xe">
+            Delivery and curbside pickup is available</h2>
+
+            <div class="Disclaimer-sc-1fro5mn"></div> 
+
+            <div class="Actions-sc-1q0maf">
+                <button class="Button-sc-2ed9ha gBcuHM StyledActionButton-sc-bpj1sl" onclick="window.location.href = 'signup.html';">Order Pickup</button>
+
+                <button class="Button-sc-2ed9ha gBcuHM StyledActionButton-sc-bpj1sl" onclick="window.location.href = 'signup.html';">Order Delivery</button>
+                    
+            </div>
+
+            <div class="Disclaimer-sc-5fykx0"></div>
+
+      </div>
+
+  </div>
+
+</div>
+    
+    <!-- end of pop up order box -->
+   
+        <div class="menu" >
+            <img class="food-image" src="img/burger1.jpg" onclick="orderBox()">
+            <div class="menu-info">
+                <a href="signup.html"><h4>WHISKY BURGER</h4></a>
+                <p>1260 CALS</p>
+                <div class="price">
+                    <p class="regular">$15</p>
+                    <p class="offer">$11.29</p>
+                </div>
+                <a id="myBtn" class="button" onclick="orderBox()">Order Now</a>
+            </div>
+        </div> <!--.menu-->
+        <div class="menu">
+            <img class="food-image" src="img/classic-burger.jpg" onclick="orderBox()">
+            <div class="menu-info">
+                <a href="signup.html"><h4>CLASSIC BURGER</h4></a>
+                <p>870 CALS</p>
+                <div class="price">
+                    <p class="regular">$13.65</p>
+                    <p class="offer">$10.99</p>
+                </div>
+                <a id="myBtn" class="button" onclick="orderBox()">Order Now</a>
+            </div>
+        </div><!--.menu-->
+        <div class="menu">
+            <img class="food-image" src="img/banana-split-dessert.jpg" onclick="orderBox()">
+            <div class="menu-info">
+                <a href="signup.html"><h4>BANANA SPLIT </h4></a>
+                <p>340 CALS</p>
+                <div class="price">
+                    <p class="regular">$1.99</p>
+                    <p class="offer">$1.00</p>
+                </div>
+                <a class="button" onclick="orderBox()">Order Now</a>
+            </div>
+        </div> <!--.menu-->
+        <div class="menu">
+            <img class="food-image" src="img/firsttime-pizza.jpg" onclick="orderBox()">
+            <div class="menu-info">
+                <a href="signup.html"><h4>VEGGIE</h4></a>
+                <p>540 CALS</p>
+                <div class="price">
+                    <p class="regular">$16.89</p>
+                    <p class="offer">$12.45</p>
+                </div>
+                <a class="button" onclick="orderBox()">Order Now</a>
+            </div>
+        </div> <!--.menu-->
+        <div class="menu">
+            <img class="food-image" src="img/turkey.jpg" onclick="orderBox()">
+            <div class="menu-info">
+                <a href="signup.html"><h4>BOURBON TURKEY</h4></a>
+                <p>790 CALS</p>
+                <div class="price">
+                    <p class="regular">$20.99</p>
+                    <p class="offer">$14.59</p>
+                </div>
+                <a class="button" onclick="orderBox()">Order Now</a>
+            </div>
+        </div> <!--.menu-->
+        <div class="menu">
+            <img class="food-image" src="img/chicken-fried-rice.jpg" onclick="orderBox()">
+            <div class="menu-info">
+                <a href="signup.html"><h4>CHICKEN RICE</h4></a>
+                <p>290 CALS</p>
+                <div class="price">
+                    <p class="regular">$4.88</p>
+                    <p class="offer">$1.96</p>
+                </div>
+                <a class="button" onclick="orderBox()">Order Now</a>
+            </div>
+        </div> <!--.card-->
+        <div class="menu">
+            <img class="food-image" src="img/bbq.jpg" onclick="orderBox()">
+            <div class="menu-info">
+                <a href="signup.html"><h4>BBQ CHICKEN</h4></a>
+                <p>600 CALS</p>
+                <div class="price">
+                    <p class="regular">$11.00</p>
+                    <p class="offer">$8.33</p>
+                </div>
+                <a class="button" onclick="orderBox()">Order Now</a>
+            </div>
+        </div> <!--.menu-->
+        <div class="menu">
+            <img class="food-image" src="img/steak-dinner.jpg" onclick="orderBox()">
+            <div class="menu-info">
+                <a href="signup.html"><h4>BOURBON STREET STEAK</h4></a>
+                <p>1040 CALS</p>
+                <div class="price">
+                    <p class="regular">$17.50</p>
+                    <p class="offer">$13.99</p>
+                </div>
+                <a class="button" onclick="orderBox()">Order Now</a>
+            </div>
+        </div> <!--.menu-->
+        <div class="menu">
+            <img class="food-image" src="img/broccoli.jpg" onclick="orderBox()"> 
+            <div class="menu-info">
+                <a href="signup.html"><h4>CAESAR BROCCOLI</h4></a>
+                <p>210 CALS</p>
+                <div class="price">
+                    <p class="regular">$9.00</p>
+                    <p class="offer">$11.49</p>
+                </div>
+                <a class="button" onclick="orderBox()">Order Now</a>
+            </div>
+        </div> <!--.menu-->
+        <div class="menu">
+            <img class="food-image" src="img/shrimp.jpg" onclick="orderBox()">  
+            <div class="menu-info">
+                <a href="signup.html"><h4>CRUNCH SHRIMP</h4></a>
+                <p>1200 CALS</p>
+                <div class="price">
+                    <p class="regular">$20.00</p>
+                    <p class="offer">$14.99</p>
+                </div>
+                <a class="button" onclick="orderBox()">Order Now</a>
+            </div>
+        </div> <!--.menu-->
+        <div class="menu">
+            <img class="food-image" src="img/meatballs.jpg" onclick="orderBox()">
+            <div class="menu-info">
+                <a href="signup.html"><h4>SPAGHETTI AND MEATBALLS</h4></a>
+                <p>I1470 CALS</p>
+                <div class="price">
+                    <p class="regular">$17.01</p>
+                    <p class="offer">$13.99</p>
+                </div>
+                <a class="button" onclick="orderBox()">Order Now</a>
+            </div>
+        </div> <!--.menu-->
+        <div class="menu">
+            <img class="food-image" src="img/image.jpg" onclick="orderBox()">
+            <div class="menu-info">
+                <a href="signup.html"><h4>STRAWBERRY MELTDOWN</h4></a>
+                <p>1000 CALS</p>
+                <div class="price">
+                    <p class="regular">$9.99</p>
+                    <p class="offer">$6.99</p>
+                </div>
+                <a class="button" onclick="orderBox()">Order Now</a>
+            </div>
+        </div> <!--.menu-->
+    </div>  <!--.menu-list-->
+
+   
+  
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="container-footer">
+                    <nav class="menu">
+                        <a class="link" href="#">Terms Of Service</a>
+                        <a class="link" href="#">Privacy Policy</a>
+                        <a class="link" href="#">Accessibility Statement</a>
+                    </nav>
+                    <nav class="menu">
+                        <a class="link" href="#">Sitemap</a>
+                        <a class="link" href="#">Careers</a>
+                        <a class="link" href="">Foundation</a>
+                        
+                    </nav>
+                    <nav class="menu">
+                        
+                        <a class="link" href="#"><small>Copyright GrubYum,  &copy; <script>document.write(new Date().getFullYear());</script> </small></a> 
+
+                        <a class="link" href="#"><i class="fab fa-instagram"></i><i class="fab fa-facebook-square"></i> <i class="fab fa-twitter"></i></a>
+                    </nav>
+                
+            </div> <!--.container-footer-->
+        </div><!--.container-->
+    </footer>
+
+    <script src="js/menu.js"></script>
+</body>
+</html>
